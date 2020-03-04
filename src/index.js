@@ -4,6 +4,6 @@ let sumBuy = buy.textContent.trim();
 let button = document.getElementById("but");
 button = addEventListener("click", verificationSum);
 
-verificationSum() {
+function verificationSum() {
     console.log(sumBuy);
 }
