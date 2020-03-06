@@ -1,14 +1,15 @@
 import verificationSum from "../src/add";
 
 test ("test number", () => {
-    let sumBuy = "22";
-    
+    const received = verificationSum("30");
+    const expected = 30;
+
+    const received1 = verificationSum("f");
+    const expected1 = Error;
+
+    expect(received).toEqual(expected);
+    expect(received1).toEqual(expected1);
 })
 
-function verificationSum() {
-    let buy = document.getElementById("buy");
-    let sumBuy = buy.value;
-    let parsed = parseInt(sumBuy, 10);
-    if (isNaN(parsed)) throw ("введите число");
-    console.log(parsed);
-}
+
+
