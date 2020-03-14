@@ -1,9 +1,5 @@
-export default verificationSum;
-
-function verificationSum(sumBuy) {
-    let parsed = parseInt(sumBuy, 10);
-    if (isNaN(parsed)) throw ("введите число");
-    return parsed;
+export default function verificationSum(sumBuy) {
+  const parsed = parseInt(sumBuy, 10);
+  if ((parsed === 'NaN')) throw new Error('введите число');
+  return parsed;
 }
-
-    

@@ -1,1 +1,1 @@
-import "../src/add";
+import './add';
